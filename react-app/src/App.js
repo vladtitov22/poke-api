@@ -12,7 +12,7 @@ function App() {
     setError(null);
     try {
       const response = await fetch(
-        `http://localhost:8080/index.php?pokemon=${pokemon}`
+        `http://php-backend/index.php?pokemon=${pokemon}`
       );
       if (!response.ok) {
         throw new Error("Pokémon nicht gefunden");
